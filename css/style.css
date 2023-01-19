@@ -717,7 +717,6 @@ body._lock {
 
 .graphs__daily {
   flex: 1 1 760px;
-  flex: 1 1 auto;
   padding: 35px 0 0 20px;
 }
 
@@ -752,6 +751,7 @@ body._lock {
 .graphs__commision {
   flex: 0 0 290px;
   padding: 35px 0 0 20px;
+  max-width: 290px;
 }
 
 .graphs__extra {
