@@ -190,6 +190,11 @@ body._lock {
   height: 32px;
   background: #1E1E1E;
   border-radius: 2px;
+  transition: all 0.2s linear;
+}
+
+.header__btn:hover {
+  background: #151111;
 }
 
 .header__btn:not(:last-child) {
@@ -220,7 +225,7 @@ body._lock {
   transform: translate(0, -50%);
   width: 12px;
   height: 12px;
-  background: url("../../img/icons/icons.svg#search") center no-repeat;
+  background: url("../img/icons/icons.svg#search") center no-repeat;
 }
 
 .header__search input {
