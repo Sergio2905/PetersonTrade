@@ -4,7 +4,7 @@
 <head>
     <title>Peterson Trade</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230119160005">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230120004238">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -406,24 +406,53 @@
 				<div class="graphs__main">
 					<div class="graphs__daily">
 						<h2 class="graphs__title">Дневные графики</h2>
-						<div class="graphs__body"></div>
+						<div class="graphs__body graphs__body_daily">
+							<div class="graphs__options">
+								<div class="graphs__info">за 30 дн.</div>
+								<button class="graphs__btn" type="button">
+									<svg>
+										<use xlink: href="img/icons/icons.svg#refresh"></use>
+									</svg>
+								</button>
+							</div>
+							<div id="daily-chart"></div>
+						</div>
 					</div>
 					<div class="graphs__commision">
 						<h2 class="graphs__title">Распределение по комиссии</h2>
-						<div class="graphs__body"></div>
+						<div class="graphs__body graphs__body_comission">
+							<div class="graphs__options">
+								<button class="graphs__btn" type="button">
+									<svg>
+										<use xlink: href="img/icons/icons.svg#refresh"></use>
+									</svg>
+								</button>
+							</div>
+							<div id="comission-chart"></div>
+						</div>
 					</div>
 				</div>
 				<div class="graphs__extra">
 					<div class="graphs__ref">
 						<h2 class="graphs__title">График количества рефералов</h2>
-						<div class="graphs__body"></div>
+						<div class="graphs__body graphs__body_ref">
+							<div class="graphs__options">
+								<div class="graphs__info">за 10 дн.</div>
+								<button class="graphs__btn" type="button">
+									<svg>
+										<use xlink: href="img/icons/icons.svg#refresh"></use>
+									</svg>
+								</button>
+							</div>
+							<div id="ref-chart"></div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
 	</div>
-	<script src="js/app.min.js?_v=20230119160005"></script>
+	<script src="js/app.min.js?_v=20230120004238"></script>
 </body>
 
 </html>

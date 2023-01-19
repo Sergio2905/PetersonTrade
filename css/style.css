@@ -716,6 +716,7 @@ body._lock {
 }
 
 .graphs__daily {
+  flex: 1 1 760px;
   flex: 1 1 auto;
   padding: 35px 0 0 20px;
 }
@@ -733,6 +734,19 @@ body._lock {
 .graphs__body {
   height: 260px;
   background: #151515;
+  position: relative;
+  padding-top: 20px;
+}
+
+.graphs__body_daily .graphs__options {
+  top: 23px;
+  left: 170px;
+}
+
+.graphs__body_ref .graphs__options,
+.graphs__body_comission .graphs__options {
+  top: 23px;
+  right: 25px;
 }
 
 .graphs__commision {
@@ -742,9 +756,47 @@ body._lock {
 
 .graphs__extra {
   padding-right: 35px;
-  flex: 1 1 450px;
+  flex: 2 1 450px;
 }
 
 .graphs__ref {
   padding: 35px 0 0 20px;
+}
+
+.graphs__options {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.graphs__info {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #fff;
+  background: #1E1E1E;
+  border-radius: 2px;
+  padding: 3px 10px;
+  margin-right: 10px;
+}
+
+.graphs__btn {
+  width: 27px;
+  height: 27px;
+  background: #D24C4D;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.graphs__btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+@media (min-width: 1921px) {
+  .graphs__extra {
+    flex: 1 1 450px;
+  }
 }
