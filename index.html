@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Peterson Trade</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230119160005">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<div class="sidebar">
+			<div class="sidebar__header">
+				<a href="#" class="sidebar__logo">
+					<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Logo"></picture>
+				</a>
+			</div>
+
+			<nav class="sidebar__menu menu">
+				<ul class="menu__list">
+					<li class="menu__item active">
+						<a href="#" class="menu__link">
+							<svg>
+								<use xlink: href="img/icons/icons.svg#statistic"></use>
+							</svg>
+							Общая статистика
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+							<svg>
+								<use xlink: href="img/icons/icons.svg#expenses"></use>
+							</svg>
+							Расходы
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+							<svg>
+								<use xlink: href="img/icons/icons.svg#people"></use>
+							</svg>
+							Люди
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+							<svg>
+								<use xlink: href="img/icons/icons.svg#support"></use>
+							</svg>
+							Поддержка
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="sidebar__traders traders">
+				<div class="traders__header">
+					<div class="traders__title">Трейдеры</div>
+					<div class="traders__count"><span>86</span></div>
+					<a href="#" class="traders__all">Все</a>
+				</div>
+				<ul class="traders__list">
+					<li class="traders__item active">
+						<div class="traders__avatar">
+							<picture><source srcset="img/traders/trader1.webp" type="image/webp"><img src="img/traders/trader1.jpg" alt="Avatar"></picture>
+						</div>
+						<div class="traders__info">
+							<div class="traders__name">Username1</div>
+							<div class="traders__group">TradeTeam</div>
+						</div>
+						<button class="traders__btn" type="button">
+							<svg>
+								<use xlink: href="img/icons/icons.svg#arrow-right"></use>
+							</svg>
+						</button>
+					</li>
+					<li class="traders__item active">
+						<div class="traders__avatar">
+							<picture><source srcset="img/traders/trader2.webp" type="image/webp"><img src="img/traders/trader2.jpg" alt="Avatar"></picture>
+						</div>
+						<div class="traders__info">
+							<div class="traders__name">Max</div>
+							<div class="traders__group">Group</div>
+						</div>
+						<button class="traders__btn" type="button">
+							<svg>
+								<use xlink: href="img/icons/icons.svg#arrow-right"></use>
+							</svg>
+						</button>
+					</li>
+					<li class="traders__item">
+						<div class="traders__avatar">
+							<picture><source srcset="img/traders/trader3.webp" type="image/webp"><img src="img/traders/trader3.jpg" alt="Avatar"></picture>
+						</div>
+						<div class="traders__info">
+							<div class="traders__name">Dima34</div>
+							<div class="traders__group">Traders</div>
+						</div>
+						<button class="traders__btn" type="button">
+							<svg>
+								<use xlink: href="img/icons/icons.svg#arrow-right"></use>
+							</svg>
+						</button>
+					</li>
+					<li class="traders__item">
+						<div class="traders__avatar">
+							<picture><source srcset="img/traders/trader1.webp" type="image/webp"><img src="img/traders/trader1.jpg" alt="Avatar"></picture>
+						</div>
+						<div class="traders__info">
+							<div class="traders__name">Username1</div>
+							<div class="traders__group">TradeTeam</div>
+						</div>
+						<button class="traders__btn" type="button">
+							<svg>
+								<use xlink: href="img/icons/icons.svg#arrow-right"></use>
+							</svg>
+						</button>
+					</li>
+					<li class="traders__item">
+						<div class="traders__avatar">
+							<picture><source srcset="img/traders/trader2.webp" type="image/webp"><img src="img/traders/trader2.jpg" alt="Avatar"></picture>
+						</div>
+						<div class="traders__info">
+							<div class="traders__name">Max</div>
+							<div class="traders__group">Group</div>
+						</div>
+						<button class="traders__btn" type="button">
+							<svg>
+								<use xlink: href="img/icons/icons.svg#arrow-right"></use>
+							</svg>
+						</button>
+					</li>
+					<li class="traders__item">
+						<div class="traders__avatar">
+							<picture><source srcset="img/traders/trader3.webp" type="image/webp"><img src="img/traders/trader3.jpg" alt="Avatar"></picture>
+						</div>
+						<div class="traders__info">
+							<div class="traders__name">Dima34</div>
+							<div class="traders__group">Traders</div>
+						</div>
+						<button class="traders__btn" type="button">
+							<svg>
+								<use xlink: href="img/icons/icons.svg#arrow-right"></use>
+							</svg>
+						</button>
+					</li>
+					<li class="traders__item">
+						<div class="traders__avatar">
+							<picture><source srcset="img/traders/trader1.webp" type="image/webp"><img src="img/traders/trader1.jpg" alt="Avatar"></picture>
+						</div>
+						<div class="traders__info">
+							<div class="traders__name">Username1</div>
+							<div class="traders__group">TradeTeam</div>
+						</div>
+						<button class="traders__btn" type="button">
+							<svg>
+								<use xlink: href="img/icons/icons.svg#arrow-right"></use>
+							</svg>
+						</button>
+					</li>
+					<li class="traders__item">
+						<div class="traders__avatar">
+							<picture><source srcset="img/traders/trader2.webp" type="image/webp"><img src="img/traders/trader2.jpg" alt="Avatar"></picture>
+						</div>
+						<div class="traders__info">
+							<div class="traders__name">Max</div>
+							<div class="traders__group">Group</div>
+						</div>
+						<button class="traders__btn" type="button">
+							<svg>
+								<use xlink: href="img/icons/icons.svg#arrow-right"></use>
+							</svg>
+						</button>
+					</li>
+					<li class="traders__item">
+						<div class="traders__avatar">
+							<picture><source srcset="img/traders/trader3.webp" type="image/webp"><img src="img/traders/trader3.jpg" alt="Avatar"></picture>
+						</div>
+						<div class="traders__info">
+							<div class="traders__name">Dima34</div>
+							<div class="traders__group">Traders</div>
+						</div>
+						<button class="traders__btn" type="button">
+							<svg>
+								<use xlink: href="img/icons/icons.svg#arrow-right"></use>
+							</svg>
+						</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="content">
+			<header class="content__header header">
+				<div class="header__date">
+					<svg>
+						<use xlink: href="img/icons/icons.svg#calendar"></use>
+					</svg>
+					<span>01.11.2023 - 31.11.2023</span>
+				</div>
+				<div class="header__btns">
+					<button class="header__btn" type="button">День</button>
+					<button class="header__btn active" type="button">Месяц</button>
+					<button class="header__btn" type="button">Все время</button>
+				</div>
+				<form class="header__search">
+					<input type="text" placeholder="Поиск">
+				</form>
+				<div class="header__options">
+					<button class="header__faq" type="button">
+						<svg>
+							<use xlink: href="img/icons/icons.svg#question"></use>
+						</svg>
+					</button>
+					<button class="header__messages" type="button">
+						<svg>
+							<use xlink: href="img/icons/icons.svg#bell"></use>
+						</svg>
+						<span>2</span>
+					</button>
+					<div class="header__avatar">
+						<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Avatar"></picture>
+					</div>
+					<div class="header__user">
+						Аким Гречка
+					</div>
+					<button class="header__arrow" type="button">
+						<svg>
+							<use xlink: href="img/icons/icons.svg#arrow-down"></use>
+						</svg>
+					</button>
+				</div>
+			</header>
+			<div class="content__tables tables">
+				<div class="tables__traders">
+					<h2 class="tables__title">Рейтинг трейдеров</h2>
+					<div class="tables__wrapper">
+						<ul class="tables__list">
+							<li class="tables__item item-tables">
+								<div class="item-tables__number">No</div>
+								<div class="item-tables__name">Имя</div>
+								<div class="item-tables__team">Команда</div>
+								<div class="item-tables__roi">ROI %</div>
+								<div class="item-tables__pnl" type="button">
+									PNL $
+									<svg>
+										<use xlink: href="img/icons/icons.svg#arrow-up"></use>
+									</svg>
+								</div>
+								<div class="item-tables__commision">Комиссия</div>
+							</li>
+							<li class="tables__item item-tables">
+								<div class="item-tables__number">1</div>
+								<div class="item-tables__name">Username1</div>
+								<div class="item-tables__team">TradeTeam</div>
+								<div class="item-tables__roi">89,6154</div>
+								<div class="item-tables__pnl" type="button">86,03921</div>
+								<div class="item-tables__commision">10,003</div>
+							</li>
+							<li class="tables__item item-tables">
+								<div class="item-tables__number">2</div>
+								<div class="item-tables__name">Max</div>
+								<div class="item-tables__team">Group</div>
+								<div class="item-tables__roi">9,6154</div>
+								<div class="item-tables__pnl red" type="button">16,03921</div>
+								<div class="item-tables__commision">01,003</div>
+							</li>
+							<li class="tables__item item-tables">
+								<div class="item-tables__number">3</div>
+								<div class="item-tables__name">Dima34</div>
+								<div class="item-tables__team">Traders</div>
+								<div class="item-tables__roi">89,6154</div>
+								<div class="item-tables__pnl" type="button">86,03921</div>
+								<div class="item-tables__commision">10,003</div>
+							</li>
+							<li class="tables__item item-tables">
+								<div class="item-tables__number">4</div>
+								<div class="item-tables__name">User434</div>
+								<div class="item-tables__team">GoodTeam</div>
+								<div class="item-tables__roi">9,6154</div>
+								<div class="item-tables__pnl" type="button">16,03921</div>
+								<div class="item-tables__commision">01,003</div>
+							</li>
+							<li class="tables__item item-tables">
+								<div class="item-tables__number">5</div>
+								<div class="item-tables__name">Username1</div>
+								<div class="item-tables__team">TradeTeam</div>
+								<div class="item-tables__roi">89,6154</div>
+								<div class="item-tables__pnl red" type="button">86,03921</div>
+								<div class="item-tables__commision">12,003</div>
+							</li>
+							<li class="tables__item item-tables">
+								<div class="item-tables__number">6</div>
+								<div class="item-tables__name">Max</div>
+								<div class="item-tables__team">Traders</div>
+								<div class="item-tables__roi">9,6154</div>
+								<div class="item-tables__pnl red" type="button">86,03921</div>
+								<div class="item-tables__commision">01,003</div>
+							</li>
+							<li class="tables__item item-tables">
+								<div class="item-tables__number">7</div>
+								<div class="item-tables__name">Dima34</div>
+								<div class="item-tables__team">TradeTeam</div>
+								<div class="item-tables__roi">89,6154</div>
+								<div class="item-tables__pnl" type="button">16,03921</div>
+								<div class="item-tables__commision">10,003</div>
+							</li>
+							<li class="tables__item item-tables">
+								<div class="item-tables__number">8</div>
+								<div class="item-tables__name">User434</div>
+								<div class="item-tables__team">GoodTeam</div>
+								<div class="item-tables__roi">89,6154</div>
+								<div class="item-tables__pnl" type="button">86,03921</div>
+								<div class="item-tables__commision">01,003</div>
+							</li>
+							<li class="tables__item item-tables">
+								<div class="item-tables__number">9</div>
+								<div class="item-tables__name">Username1</div>
+								<div class="item-tables__team">TradeTeam</div>
+								<div class="item-tables__roi">89,6154</div>
+								<div class="item-tables__pnl red" type="button">86,03921</div>
+								<div class="item-tables__commision">12,003</div>
+							</li>
+						</ul>
+						<div class="tables__more">
+							<button class="tables__btn" type="button">
+								Больше
+								<svg>
+									<use xlink: href="img/icons/icons.svg#arrow-up"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+
+				</div>
+				<div class="tables__teams">
+					<h2 class="tables__title">Рейтинг трейдеров</h2>
+					<div class="tables__wrapper">
+						<ul class="tables__list">
+							<li class="tables__item item-tables">
+								<div class="item-tables__number">No</div>
+								<div class="item-tables__team">Команда</div>
+								<div class="item-tables__commision">Комиссия</div>
+							</li>
+							<li class="tables__item item-tables">
+								<div class="item-tables__number">1</div>
+								<div class="item-tables__team">TradeTeam</div>
+								<div class="item-tables__commision">10,003</div>
+							</li>
+							<li class="tables__item item-tables">
+								<div class="item-tables__number">2</div>
+								<div class="item-tables__team">Group</div>
+								<div class="item-tables__commision">01,003</div>
+							</li>
+							<li class="tables__item item-tables">
+								<div class="item-tables__number">3</div>
+								<div class="item-tables__team">TradeTeam</div>
+								<div class="item-tables__commision">10,003</div>
+							</li>
+							<li class="tables__item item-tables">
+								<div class="item-tables__number">4</div>
+								<div class="item-tables__team">Group</div>
+								<div class="item-tables__commision">01,003</div>
+							</li>
+							<li class="tables__item item-tables">
+								<div class="item-tables__number">5</div>
+								<div class="item-tables__team">TradeTeam</div>
+								<div class="item-tables__commision">10,003</div>
+							</li>
+							<li class="tables__item item-tables">
+								<div class="item-tables__number">6</div>
+								<div class="item-tables__team">Group</div>
+								<div class="item-tables__commision">01,003</div>
+							</li>
+							<li class="tables__item item-tables">
+								<div class="item-tables__number">7</div>
+								<div class="item-tables__team">TradeTeam</div>
+								<div class="item-tables__commision">10,003</div>
+							</li>
+							<li class="tables__item item-tables">
+								<div class="item-tables__number">8</div>
+								<div class="item-tables__team">Group</div>
+								<div class="item-tables__commision">01,003</div>
+							</li>
+							<li class="tables__item item-tables">
+								<div class="item-tables__number">9</div>
+								<div class="item-tables__team">TradeTeam</div>
+								<div class="item-tables__commision">10,003</div>
+							</li>
+						</ul>
+						<div class="tables__more">
+							<button class="tables__btn" type="button">
+								Больше
+								<svg>
+									<use xlink: href="img/icons/icons.svg#arrow-up"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content__graphs graphs">
+				<div class="graphs__main">
+					<div class="graphs__daily">
+						<h2 class="graphs__title">Дневные графики</h2>
+						<div class="graphs__body"></div>
+					</div>
+					<div class="graphs__commision">
+						<h2 class="graphs__title">Распределение по комиссии</h2>
+						<div class="graphs__body"></div>
+					</div>
+				</div>
+				<div class="graphs__extra">
+					<div class="graphs__ref">
+						<h2 class="graphs__title">График количества рефералов</h2>
+						<div class="graphs__body"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<script src="js/app.min.js?_v=20230119160005"></script>
+</body>
+
+</html>
