@@ -586,7 +586,7 @@ body._lock {
 
 .tables__list {
   background: #151515;
-  padding-bottom: 25px;
+  padding-bottom: 60px;
   max-height: calc(var(--app-height) - 525px);
   overflow-y: auto;
   scrollbar-width: thin;
