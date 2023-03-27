@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Peterson Trade</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230324110229">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<div class="sidebar">
+			<div class="sidebar__header">
+				<a href="#" class="sidebar__logo">
+					<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Logo"></picture>
+				</a>
+			</div>
+
+			<nav class="sidebar__menu menu">
+				<ul class="menu__list">
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+							<svg>
+								<use xlink: href="img/icons/icons.svg#statistic"></use>
+							</svg>
+							Общая статистика
+						</a>
+					</li>
+					<li class="menu__item active">
+						<a href="#" class="menu__link">
+							<svg>
+								<use xlink: href="img/icons/icons.svg#load"></use>
+							</svg>
+							Загрузить файл
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+							<svg>
+								<use xlink: href="img/icons/icons.svg#team"></use>
+							</svg>
+							Управление командой
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="content">
+			<header class="content__header header">
+				<div class="header__date">
+					<svg>
+						<use xlink: href="img/icons/icons.svg#calendar"></use>
+					</svg>
+					<span>01.11.2023 - 31.11.2023</span>
+				</div>
+				<div class="header__btns">
+					<button class="header__btn" type="button">День</button>
+					<button class="header__btn active" type="button">Месяц</button>
+					<button class="header__btn" type="button">Все время</button>
+				</div>
+				<form class="header__search">
+					<input type="text" placeholder="Поиск">
+				</form>
+				<div class="header__options">
+					<button class="header__faq" type="button">
+						<svg>
+							<use xlink: href="img/icons/icons.svg#question"></use>
+						</svg>
+					</button>
+					<button class="header__messages" type="button">
+						<svg>
+							<use xlink: href="img/icons/icons.svg#bell"></use>
+						</svg>
+						<span>2</span>
+					</button>
+					<div class="header__avatar">
+						<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Avatar"></picture>
+					</div>
+					<div class="header__user">
+						Аким Гречка
+					</div>
+					<button class="header__menu-icon" type="button">
+						<svg>
+							<use xlink: href="img/icons/icons.svg#arrow-down"></use>
+						</svg>
+					</button>
+					<ul class="header__menu menu-header">
+						<li class="menu-header__item">
+							<a href="#reg" class="menu-header__link popup-link">Регистрация</a>
+						</li>
+						<li class="menu-header__item">
+							<a href="#reg-team-lead" class="menu-header__link popup-link">Регистрация TeamLead</a>
+						</li>
+						<li class="menu-header__item">
+							<a href="#login" class="menu-header__link popup-link">Логин</a>
+						</li>
+						<li class="menu-header__item">
+							<a href="#" class="menu-header__link">Выход</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<div class="content__load load">
+				<h2 class="load__title">Загрузить файл</h2>
+				<div class="load__file">
+					<h3 class="load__subtitle">Название файла</h3>
+					<input type="text" placeholder="Введите название">
+					<input type="file">
+					<button type="button" class="load__btn load__btn_file load__btn_black btn_black">Загрузить
+						файл</button>
+					<button type="button" class="load__btn load__btn_pink btn_pink">Подтвердить</button>
+				</div>
+				<ul class="load__table table-load">
+					<li class="table-load__row">
+						<div class="table-load__number">No</div>
+						<div class="table-load__name">Название</div>
+						<div class="table-load__delete">Удалить</div>
+					</li>
+					<li class="table-load__row">
+						<div class="table-load__number">1</div>
+						<div class="table-load__name">Username1</div>
+						<div class="table-load__delete">
+							<button type="button" class="table-load__btn">
+								<svg>
+									<use xlink: href="img/icons/icons.svg#delete"></use>
+								</svg>
+							</button>
+						</div>
+					</li>
+					<li class="table-load__row">
+						<div class="table-load__number">2</div>
+						<div class="table-load__name">Max</div>
+						<div class="table-load__delete">
+							<button type="button" class="table-load__btn">
+								<svg>
+									<use xlink: href="img/icons/icons.svg#delete"></use>
+								</svg>
+							</button>
+						</div>
+					</li>
+					<li class="table-load__row">
+						<div class="table-load__number">3</div>
+						<div class="table-load__name">Dima34</div>
+						<div class="table-load__delete">
+							<button type="button" class="table-load__btn">
+								<svg>
+									<use xlink: href="img/icons/icons.svg#delete"></use>
+								</svg>
+							</button>
+						</div>
+					</li>
+					<li class="table-load__row">
+						<div class="table-load__number">4</div>
+						<div class="table-load__name">User434</div>
+						<div class="table-load__delete">
+							<button type="button" class="table-load__btn">
+								<svg>
+									<use xlink: href="img/icons/icons.svg#delete"></use>
+								</svg>
+							</button>
+						</div>
+					</li>
+					<li class="table-load__row">
+						<div class="table-load__number">5</div>
+						<div class="table-load__name">Username1</div>
+						<div class="table-load__delete">
+							<button type="button" class="table-load__btn">
+								<svg>
+									<use xlink: href="img/icons/icons.svg#delete"></use>
+								</svg>
+							</button>
+						</div>
+					</li>
+					<li class="table-load__row">
+						<div class="table-load__number">6</div>
+						<div class="table-load__name">Max</div>
+						<div class="table-load__delete">
+							<button type="button" class="table-load__btn">
+								<svg>
+									<use xlink: href="img/icons/icons.svg#delete"></use>
+								</svg>
+							</button>
+						</div>
+					</li>
+					<li class="table-load__row">
+						<div class="table-load__number">7</div>
+						<div class="table-load__name">Dima34</div>
+						<div class="table-load__delete">
+							<button type="button" class="table-load__btn">
+								<svg>
+									<use xlink: href="img/icons/icons.svg#delete"></use>
+								</svg>
+							</button>
+						</div>
+					</li>
+					<li class="table-load__row">
+						<div class="table-load__number">8</div>
+						<div class="table-load__name">User434</div>
+						<div class="table-load__delete">
+							<button type="button" class="table-load__btn">
+								<svg>
+									<use xlink: href="img/icons/icons.svg#delete"></use>
+								</svg>
+							</button>
+						</div>
+					</li>
+					<li class="table-load__row">
+						<div class="table-load__number">9</div>
+						<div class="table-load__name">Username1</div>
+						<div class="table-load__delete">
+							<button type="button" class="table-load__btn">
+								<svg>
+									<use xlink: href="img/icons/icons.svg#delete"></use>
+								</svg>
+							</button>
+						</div>
+					</li>
+					<li class="table-load__row">
+						<div class="table-load__number">10</div>
+						<div class="table-load__name">Max</div>
+						<div class="table-load__delete">
+							<button type="button" class="table-load__btn">
+								<svg>
+									<use xlink: href="img/icons/icons.svg#delete"></use>
+								</svg>
+							</button>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="popup" id="reg">
+    <div class="popup__body">
+        <div class="popup__content login">
+            <a href="#" class="login__close close-popup">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#close"></use>
+                </svg>
+            </a>
+            <h2 class="login__title title">Форма регистрации</h2>
+            <div class="login__item">
+                <h3 class="login__subtitle subtitle">Имя Фамилия</h3>
+                <input type="text" placeholder="Ваше Имя и Фамилия">
+            </div>
+            <div class="login__item">
+                <h3 class="login__subtitle subtitle">Реферал ID</h3>
+                <input type="text" placeholder="Введите ID">
+            </div>
+            <div class="login__item error">
+                <h3 class="login__subtitle subtitle">Email</h3>
+                <input type="text" placeholder="Email.com">
+                <div class="error__message">Ошибка: Неверный формат</div>
+            </div>
+            <div class="login__items">
+                <div class="login__item">
+                    <h3 class="login__subtitle subtitle">Discord</h3>
+                    <input type="text" placeholder="Ваш Discord">
+                </div>
+                <div class="login__item">
+                    <h3 class="login__subtitle subtitle">Telegram</h3>
+                    <input type="text" placeholder="Ваш Telegram">
+                </div>
+            </div>
+            <div class="login__item">
+                <h3 class="login__subtitle subtitle">Телефон</h3>
+                <input type="text" placeholder="+X (0XX) XXX XX XX">
+            </div>
+            <div class="login__items">
+                <div class="login__item">
+                    <h3 class="login__subtitle subtitle">Api key</h3>
+                    <input type="text" placeholder="Ваш Api key">
+                </div>
+                <div class="login__item">
+                    <h3 class="login__subtitle subtitle">Api key Secret</h3>
+                    <input type="text" placeholder="Ваш Api key secret">
+                </div>
+            </div>
+            <div class="login__items">
+                <div class="login__item login__item_capcha">
+                </div>
+                <div class="login__item">
+                    <input type="text" placeholder="Капча">
+                </div>
+            </div>
+            <button type="button" class="login__btn btn_pink">Подать заявку</button>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="reg-team-lead">
+    <div class="popup__body">
+        <div class="popup__content login">
+            <a href="#" class="login__close close-popup">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#close"></use>
+                </svg>
+            </a>
+            <h2 class="login__title title">Регистрация Team Lead</h2>
+            <div class="login__item">
+                <h3 class="login__subtitle subtitle">Login</h3>
+                <input type="text" placeholder="Ваше Имя и Фамилия">
+            </div>
+            <div class="login__item error">
+                <h3 class="login__subtitle subtitle">Email</h3>
+                <input type="text" placeholder="Email.com">
+            </div>
+            <div class="login__items">
+                <div class="login__item">
+                    <h3 class="login__subtitle subtitle">Password</h3>
+                    <input type="password" placeholder="Password">
+                    <button type="button" class="login__pass">
+                        <svg>
+                            <use xlink: href="img/icons/icons.svg#eye"></use>
+                        </svg>
+                        <svg>
+                            <use xlink: href="img/icons/icons.svg#eye2"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="login__item">
+                    <h3 class="login__subtitle subtitle">Repeat Password</h3>
+                    <input type="password" placeholder="Password">
+                    <button type="button" class="login__pass">
+                        <svg>
+                            <use xlink: href="img/icons/icons.svg#eye"></use>
+                        </svg>
+                        <svg>
+                            <use xlink: href="img/icons/icons.svg#eye2"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="login__items">
+                <div class="login__item login__item_capcha">
+                </div>
+                <div class="login__item">
+                    <input type="text" placeholder="Капча">
+                </div>
+            </div>
+            <button type="button" class="login__btn btn_pink">Подать заявку</button>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="login">
+    <div class="popup__body">
+        <div class="popup__content login">
+            <a href="#" class="login__close close-popup">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#close"></use>
+                </svg>
+            </a>
+            <h2 class="login__title title">Login</h2>
+            <div class="login__item">
+                <h3 class="login__subtitle subtitle">Login</h3>
+                <input type="text" placeholder="Ваше Имя и Фамилия">
+            </div>
+            <div class="login__item">
+                <h3 class="login__subtitle subtitle">Password</h3>
+                <input type="password" placeholder="Пароль">
+                <button type="button" class="login__pass">
+                    <svg>
+                        <use xlink: href="img/icons/icons.svg#eye"></use>
+                    </svg>
+                    <svg>
+                        <use xlink: href="img/icons/icons.svg#eye2"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="login__checkbox checkbox">
+                Кошелек указан верно
+                <input type="checkbox" name="if-human">
+            </div>
+            <button type="button" class="login__btn btn_pink">Подтвердить</button>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="withdraw">
+    <div class="popup__body">
+        <div class="popup__content withdraw">
+            <a href="#" class="withdraw__close close-popup">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#close"></use>
+                </svg>
+            </a>
+            <h2 class="withdraw__title title">Вывод</h2>
+            <div class="withdraw__info subtitle">Доступная сумма вывода
+                <div class="withdraw__value">863<span>$</span></div>
+            </div>
+            <div class="withdraw__item">
+                <h3 class="withdraw__subtitle subtitle">Я хочу вывести</h3>
+                <div class="withdraw__input">
+                    <input type="text" value="863$" placeholder="Кошелек">
+                    <div class="withdraw__btns">
+                        <button type="button" class="withdraw__btn_up">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#up"></use>
+                            </svg>
+                        </button>
+                        <button type="button" class="withdraw__btn_down">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#down"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <button type="button" class="withdraw__btn_all btn_black">Все</button>
+                </div>
+            </div>
+            <div class="withdraw__item">
+                <h3 class="withdraw__subtitle subtitle">Кошелек</h3>
+                <input type="text" placeholder="Кошелек">
+            </div>
+            <div class="withdraw__checkbox checkbox">
+                Кошелек указан верно
+                <input type="checkbox" name="withdraw">
+            </div>
+            <button type="button" class="withdraw__btn btn_pink">Подтвердить</button>
+        </div>
+    </div>
+</div>
+	</div>
+	<script src="js/app.min.js?_v=20230324110229"></script>
+</body>
+
+</html>
